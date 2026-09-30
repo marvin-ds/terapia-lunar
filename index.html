@@ -5,29 +5,326 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Terapia Lunar: espaço digital para o projeto terapêutico da Letícia."
+      content="Terapia Lunar, por Leticia Cupertino: Tarot, astrologia e práticas espirituais para autoconhecimento, autocuidado e travessias de ciclo."
     />
-    <title>Terapia Lunar</title>
+    <meta name="theme-color" content="#211526" />
+    <title>Terapia Lunar | Leticia Cupertino</title>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23211526'/%3E%3Ccircle cx='35' cy='28' r='16' fill='%23B99A5B'/%3E%3Ccircle cx='42' cy='22' r='16' fill='%23211526'/%3E%3Cpath d='M14 45c9 5 22 5 36 0' stroke='%23F2EBDD' stroke-width='4' stroke-linecap='round' fill='none'/%3E%3C/svg%3E"
+    />
+    <link rel="preload" href="assets/hero-ritual.webp" as="image" type="image/webp" />
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <main class="page-shell">
-      <section class="intro" aria-labelledby="page-title">
-        <div class="brand-mark" aria-hidden="true">
-          <span class="moon"></span>
-          <span class="horizon"></span>
+    <header class="site-header" data-reveal>
+      <a class="brand" href="#inicio" aria-label="Terapia Lunar">
+        <span class="brand-symbol" aria-hidden="true"></span>
+        <span>Terapia Lunar</span>
+      </a>
+
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="#atendimentos">Atendimentos</a>
+        <a href="#jornada">Jornada</a>
+        <a href="#sobre">Leticia</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+
+      <a class="header-cta" href="#contato">Agendar</a>
+    </header>
+
+    <main id="inicio">
+      <section class="hero section-shell">
+        <div class="hero-copy" data-reveal>
+          <p class="eyebrow">Tarot, astrologia e autocuidado espiritual</p>
+          <h1>Clareza para atravessar seus ciclos com mais consciência.</h1>
+          <p class="hero-lede">
+            A Terapia Lunar, conduzida por Leticia Cupertino, cria espaços de
+            escuta, simbolismo e prática espiritual para quem busca compreender
+            escolhas, transições e recomeços com acolhimento.
+          </p>
+
+          <div class="hero-actions" aria-label="Ações principais">
+            <a class="button button-primary" href="#contato">Agendar atendimento</a>
+            <a class="button button-secondary" href="#atendimentos">Conhecer consultas</a>
+          </div>
+
+          <div class="trust-strip" aria-label="Destaques da abordagem">
+            <span>Desde 2019</span>
+            <span>Atendimento individual</span>
+            <span>Sem promessas absolutas</span>
+          </div>
         </div>
 
-        <div class="intro-copy">
-          <p class="eyebrow">Projeto em preparação</p>
-          <h1 id="page-title">Terapia Lunar</h1>
+        <div class="hero-visual" data-reveal>
+          <picture>
+            <source srcset="assets/hero-ritual.webp" type="image/webp" />
+            <img
+              src="assets/hero-ritual.png"
+              width="1680"
+              height="945"
+              alt="Cartas de Tarot, vela acesa, ervas e objetos lunares sobre tecido ameixa."
+            />
+          </picture>
+          <div class="moon-orbit" aria-hidden="true">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="phase-card">
+            <span class="phase-label">Fase do atendimento</span>
+            <strong>Escuta antes da resposta</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell signal-grid" aria-labelledby="sinais-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Quando procurar</p>
+          <h2 id="sinais-title">Nem todo momento pede uma resposta pronta.</h2>
+        </div>
+
+        <div class="signal-panel" data-reveal>
           <p>
-            Este espaço está sendo preparado para receber o site e a futura
-            experiência digital do trabalho terapêutico da Letícia.
+            Às vezes, o que ajuda é uma pausa orientada: olhar para o que se
+            repete, nomear o que está confuso e encontrar um próximo passo que
+            respeite sua autonomia.
+          </p>
+          <div class="signal-list">
+            <span>Transições</span>
+            <span>Encerramento de ciclos</span>
+            <span>Relacionamentos e limites</span>
+            <span>Clareza mental</span>
+            <span>Autocuidado espiritual</span>
+            <span>Prosperidade com responsabilidade</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-shell services" id="atendimentos" aria-labelledby="services-title">
+        <div class="section-heading wide" data-reveal>
+          <p class="eyebrow">Atendimentos</p>
+          <h2 id="services-title">Escolha a prática que conversa com o seu momento.</h2>
+          <p>
+            O modelo abaixo organiza as modalidades identificadas na auditoria.
+            Valores, duração, formatos e disponibilidade devem ser confirmados
+            com a Leticia antes da publicação final.
+          </p>
+        </div>
+
+        <div class="service-board">
+          <div class="service-tabs" role="tablist" aria-label="Modalidades de atendimento" data-reveal>
+            <button class="service-tab is-active" type="button" data-service="tarot">Tarot</button>
+            <button class="service-tab" type="button" data-service="astrologia">Astrologia</button>
+            <button class="service-tab" type="button" data-service="hoodoo">Hoodoo</button>
+            <button class="service-tab" type="button" data-service="radiestesia">Radiestesia</button>
+            <button class="service-tab" type="button" data-service="uterina">Limpeza uterina</button>
+            <button class="service-tab" type="button" data-service="divorcio">Divórcio energético</button>
+            <button class="service-tab" type="button" data-service="anual">Leitura anual</button>
+          </div>
+
+          <article class="service-detail" data-reveal aria-live="polite">
+            <p class="detail-kicker" id="service-kicker">Para perguntas, escolhas e travessias</p>
+            <h3 id="service-title">Leitura de Tarot</h3>
+            <p id="service-copy">
+              Uma consulta para explorar temas específicos, organizar perguntas
+              e observar possibilidades sem transformar a leitura em garantia de
+              futuro.
+            </p>
+            <dl class="detail-list">
+              <div>
+                <dt>Indicado para</dt>
+                <dd id="service-fit">clareza sobre decisões, relações, limites e novos ciclos.</dd>
+              </div>
+              <div>
+                <dt>Como acontece</dt>
+                <dd id="service-flow">escuta inicial, tiragem, interpretação e fechamento com reflexões.</dd>
+              </div>
+            </dl>
+            <a class="text-link" href="#contato">Consultar disponibilidade</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell journey" id="jornada" aria-labelledby="journey-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Experiência</p>
+          <h2 id="journey-title">Um caminho simples, acolhedor e transparente.</h2>
+        </div>
+
+        <div class="journey-steps">
+          <article data-reveal>
+            <span>01</span>
+            <h3>Escolha o tema</h3>
+            <p>Você pode chegar com uma pergunta, uma sensação ou uma fase que deseja compreender melhor.</p>
+          </article>
+          <article data-reveal>
+            <span>02</span>
+            <h3>Agende seu horário</h3>
+            <p>O canal oficial confirma disponibilidade, pagamento, preparo e formato do atendimento.</p>
+          </article>
+          <article data-reveal>
+            <span>03</span>
+            <h3>Participe da consulta</h3>
+            <p>A condução combina escuta, linguagem simbólica e respeito à autonomia de quem é atendida.</p>
+          </article>
+          <article data-reveal>
+            <span>04</span>
+            <h3>Leve reflexões</h3>
+            <p>Ao final, você sai com pontos organizados para continuar seu processo de autocuidado.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell offers" aria-labelledby="offers-title">
+        <div class="section-heading wide" data-reveal>
+          <p class="eyebrow">Produtos e experiências</p>
+          <h2 id="offers-title">Nem toda conexão precisa começar por uma consulta individual.</h2>
+        </div>
+
+        <div class="offer-grid">
+          <article class="offer-card featured" data-reveal>
+            <span class="offer-type">Material introdutório</span>
+            <h3>Guia de Autocuidado Espiritual</h3>
+            <p>
+              Uma porta de entrada para quem deseja criar rituais pessoais com
+              mais consciência, presença e segurança.
+            </p>
+          </article>
+          <article class="offer-card" data-reveal>
+            <span class="offer-type">Comunidade</span>
+            <h3>Grupo VIP Terapia Lunar</h3>
+            <p>
+              Um espaço para conteúdos, avisos de agenda, práticas e convites
+              especiais, conforme a proposta atual da marca.
+            </p>
+          </article>
+          <article class="offer-card" data-reveal>
+            <span class="offer-type">Eventos</span>
+            <h3>Rainhas do Tarot</h3>
+            <p>
+              Uma experiência para encontros, celebrações e eventos que desejam
+              incluir leituras com presença, cuidado e organização.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell about" id="sobre" aria-labelledby="about-title">
+        <div class="about-mark" aria-hidden="true" data-reveal>
+          <span></span>
+        </div>
+
+        <div class="about-copy" data-reveal>
+          <p class="eyebrow">Sobre Leticia</p>
+          <h2 id="about-title">Maga, terapeuta e criadora da Terapia Lunar.</h2>
+          <p>
+            Leticia Cupertino atua desde 2019 acompanhando processos de
+            autoconhecimento e autocuidado por meio do Tarot, do Hoodoo e de
+            práticas espirituais holísticas.
+          </p>
+          <p>
+            A abordagem da Terapia Lunar parte da escuta: antes de interpretar,
+            orientar ou sugerir uma prática, existe o cuidado de compreender o
+            momento, a pergunta e os limites de cada pessoa.
           </p>
         </div>
       </section>
+
+      <section class="section-shell ethics" aria-labelledby="ethics-title">
+        <div class="section-heading" data-reveal>
+          <p class="eyebrow">Responsabilidade</p>
+          <h2 id="ethics-title">Espiritualidade com limites claros gera mais confiança.</h2>
+        </div>
+
+        <div class="ethics-grid">
+          <article data-reveal>
+            <h3>A Terapia Lunar faz</h3>
+            <ul>
+              <li>Cria espaços de reflexão e autocuidado.</li>
+              <li>Explica modalidades, preparo e limites.</li>
+              <li>Respeita autonomia, sigilo e contexto.</li>
+              <li>Orienta escolhas sem dependência emocional.</li>
+            </ul>
+          </article>
+          <article data-reveal>
+            <h3>A Terapia Lunar não faz</h3>
+            <ul>
+              <li>Promessas de cura ou resultado garantido.</li>
+              <li>Substituição de acompanhamento médico ou psicológico.</li>
+              <li>Controle da vontade de terceiros.</li>
+              <li>Pressão baseada em medo, culpa ou urgência artificial.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-shell faq" id="faq" aria-labelledby="faq-title">
+        <div class="section-heading wide" data-reveal>
+          <p class="eyebrow">Perguntas frequentes</p>
+          <h2 id="faq-title">Antes de agendar, entenda como a experiência funciona.</h2>
+        </div>
+
+        <div class="faq-list" data-reveal>
+          <details open>
+            <summary>Como escolher o atendimento certo?</summary>
+            <p>
+              Tarot costuma funcionar bem para temas e decisões específicas.
+              Astrologia ajuda a olhar ciclos e padrões. Práticas espirituais
+              devem ser escolhidas conforme objetivo, preparo e orientação da
+              profissional.
+            </p>
+          </details>
+          <details>
+            <summary>O Tarot prevê o futuro?</summary>
+            <p>
+              A proposta da Terapia Lunar apresenta o Tarot como ferramenta de
+              reflexão e direcionamento, não como garantia de acontecimentos
+              futuros.
+            </p>
+          </details>
+          <details>
+            <summary>Os atendimentos substituem terapia ou tratamento médico?</summary>
+            <p>
+              Não. As práticas têm finalidade espiritual, simbólica, reflexiva
+              ou de autocuidado e não substituem profissionais habilitados em
+              saúde, direito ou finanças.
+            </p>
+          </details>
+          <details>
+            <summary>Existe sigilo no atendimento?</summary>
+            <p>
+              O site final deve registrar a política real da Terapia Lunar,
+              incluindo gravações, depoimentos, dados pessoais e condições de
+              remarcação.
+            </p>
+          </details>
+        </div>
+      </section>
+
+      <section class="section-shell contact" id="contato" aria-labelledby="contact-title">
+        <div class="contact-panel" data-reveal>
+          <p class="eyebrow">Próximo passo</p>
+          <h2 id="contact-title">Quer olhar para o seu momento com mais presença?</h2>
+          <p>
+            Este modelo está pronto para receber o WhatsApp, catálogo de
+            consultas, agenda online, valores e políticas oficiais da Terapia
+            Lunar.
+          </p>
+          <div class="contact-actions">
+            <a class="button button-primary" href="#atendimentos">Escolher atendimento</a>
+            <a class="button button-secondary" href="#faq">Tirar dúvidas primeiro</a>
+          </div>
+        </div>
+      </section>
     </main>
+
+    <footer class="site-footer">
+      <span>Terapia Lunar</span>
+      <span>Autoconhecimento, autocuidado e espiritualidade responsável.</span>
+    </footer>
 
     <script src="js/main.js" defer></script>
   </body>
